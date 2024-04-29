@@ -1,27 +1,25 @@
-# Angular17auth
+# Login and Signup with API in Angular 17
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
+In this tutorial, we'll learn how to build login and signup pages with Angular 17. we'll use HTML and CSS to create the pages then use Angular code to build the login and signup forms and get the login and signup data from the forms using a reactive approach and then submit it to the auth endpoint using HttpClient.
 
-## Development server
+## Setting Up the Authentication Backend
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+We'll use this Node.js app from https://github.com/techiediaries/node-mongoose-jwt which provides an authentication backend so make sure you have MongoDB installed in your system then clone the repo, navigate inside of it and run the following command:
 
-## Code scaffolding
+```
+npm install
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Next create an .env file and add the following contents:
 
-## Build
+```
+CONNECTION_STRING= mongodb://127.0.0.1:27017/myapp
+JWT_SECRET= secret123456789
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Next, run the backend using this command:
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```
+npm start
+```
+You app JWT authentication backend will be listening at http://localhost:3000.
