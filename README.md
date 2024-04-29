@@ -17,9 +17,13 @@ CONNECTION_STRING= mongodb://127.0.0.1:27017/myapp
 JWT_SECRET= secret123456789
 ```
 
+
 Next, run the backend using this command:
 
 ```
 npm start
 ```
 You app JWT authentication backend will be listening at http://localhost:3000.
+
+Read the full article from [https://www.techiediaries.com/login-signup-api-angular-17/](https://www.techiediaries.com/login-signup-api-angular-17/)
+
